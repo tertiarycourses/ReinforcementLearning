@@ -57,7 +57,7 @@ class RL(object):
 # on-policy
 class SarsaTable(RL):
 
-    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=1):
+    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
         super(SarsaTable, self).__init__(actions, learning_rate, reward_decay, e_greedy)
 
     def learn(self, s, a, r, s_, a_):

@@ -9,6 +9,7 @@ Q = np.zeros([env.observation_space.n,env.action_space.n])
 # Set learning parameters
 lr = .8
 y = .95
+EPSILON = 0.9
 num_episodes = 2000
 
 for i in range(num_episodes):

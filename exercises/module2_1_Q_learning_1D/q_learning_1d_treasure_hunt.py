@@ -5,9 +5,9 @@ import time
 np.random.seed(2)  # reproducible
 
 
-N_STATES = 6   # the length of the 1 dimensional world
+N_STATES = 10   # the length of the 1 dimensional world
 ACTIONS = ['left', 'right']     # available actions
-EPSILON = 1.0   # greedy police
+EPSILON = 0.9   # greedy police
 ALPHA = 0.1     # learning rate
 GAMMA = 0.9    # discount factor
 MAX_EPISODES = 13   # maximum episodes
